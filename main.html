@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eggcelerate with Chris - Startup Incubator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffecd1;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Other existing styles here with adjusted colors */
+
+    .expandable-content {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .expandable-content.active {
+      display: block;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: none;
+      padding: 5px;
+    }
+
+
+  .expand-button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #01A7FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .expand-button:hover {
+    background-color: #008FCC;
+  }
+
+    .contact-form button {
+      margin-top: 10px;
+      background-color: #ff57b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .team img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Eggcelerate with Chris</h1>
+      <p class="tagline">Ignite Your Startup Journey</p>
+    </header>
+
+    <div class="testimonial-carousel">
+      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+          <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="testimonial">"Eggcelerate with Chris has provided exceptional support and guidance. They helped us shape our startup and reach new heights!"</p>
+            <p class="testimonial-author">- Sarah Thompson, CEO of InnovateX</p>
+          </div>
+          <div class="carousel-item">
+            <p class="testimonial">"Joining Eggcelerate with Chris was a game-changer for us. Their expertise and network opened doors we never thought possible."</p>
+            <p class="testimonial-author">- David Lee, Co-founder of TechLaunch</p>
+          </div>
+          <div class="carousel-item">
+            <p class="testimonial">"Thanks to Eggcelerate with Chris, we transformed our vision into a thriving business. Their unwavering support was invaluable!"</p>
+            <p class="testimonial-author">- Emily Collins, Founder of GrowthHub</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="terms">
+      <h2>Terms and Conditions</h2>
+<button class="expand-button" onclick="document.querySelector('.terms-content').classList.toggle('active')">Expand/Collapse Terms</button>
+
+      <div class="terms-content expandable-content">
+        <p>Please review the terms and conditions below before proceeding:</p>
+        <ul>
+          <li>All participants must commit to a high level of professionalism and courtesy.</li>
+          <li>Participants are expected to adhere to all local and national laws and regulations.</li>
+          <li>Confidentiality of shared information is of utmost importance and must be maintained.</li>
+          <li>Participants must agree to a non-disclosure agreement to protect intellectual property.</li>
+          <li>Failure to comply with these terms may result in termination of participation.</li>
+        </ul>
+        <p>By participating in Eggcelerate with Chris, you agree to these terms and conditions.</p>
+      </div>
+    </div>
+
+    <div class="project-list">
+      <h2>Successful Past Projects</h2>
+      <div class="project">
+        <h3 class="project-title">Project 1 - Innovative Solutions for Sustainable Energy</h3>
+        <p class="project-description">We supported a startup that developed groundbreaking renewable energy technologies, reducing carbon emissions by 50% in targeted industries.</p>
+      </div>
+      <div class="project">
+        <h3 class="project-title">Project 2 - Disruptive E-commerce Platform</h3>
+        <p class="project-description">We mentored a team that created an AI-powered e-commerce platform, achieving a 200% increase in sales and transforming the online shopping experience.</p>
+      </div>
+      <div class="project">
+        <h3 class="project-title">Project 3 - HealthTech Revolutionizing Patient Care</h3>
+        <p class="project-description">We collaborated with a startup that developed a cutting-edge HealthTech solution, improving patient care and efficiency in hospitals        by streamlining workflows and automating processes.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2><button class="expand-button" onclick="document.querySelector('.faq-content').classList.toggle('active')">Expand/Collapse FAQ</button>
+
+      <div class="faq-content expandable-content">
+        <h3>How can I join Eggcelerate with Chris?</h3>
+        <p>Simply fill out the application form on our website and our team will get back to you shortly.</p>
+        <h3>What types of startups do you support?</h3>
+        <p>We support a broad range of startups, including tech, sustainability, healthcare, and more.</p>
+        <h3>What support does Eggcelerate provide?</h3>
+        <p>We provide mentoring, networking opportunities, investor meetings, and more to help your startup succeed.</p>
+      </div>
+    </div>
+
+    <div class="team">
+      <h2>Meet the Team</h2>
+      <div class="member">
+        <img src="chris.jpg" alt="Chris">
+        <h3>Chris</h3>
+        <p>Founder and CEO of Eggcelerate</p>
+      </div>
+      <!-- Add other team members as needed -->
+    </div>
+
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2023 Eggcelerate with Chris. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
